@@ -78,8 +78,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 70f33ba99871        sebp/elk:761        "/usr/local/bin/star…"   2 days ago          Up About a minute   0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   elk
 ```
 
-### Target Machines & Beats This ELK server is configured to monitor the
-following machines:
+### Target Machines & Beats This ELK server is configured to monitor the following machines:
     - Web-1 (10.0.0.8)
     - Web-2 (10.0.0.9)
     - Web-3 (10.0.0.11)
@@ -94,9 +93,7 @@ These Beats allow us to collect the following information from each machine:
     - Metricbeats listens to specific services to generate tailored logs and
         display metrics on the ELK stack
 
-### Using the Playbook In order to use the playbook, you will need to have an
-Ansible control node already configured. Assuming you have such a control node
-provisioned:
+### Using the Playbook In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 1. Copy the `ansible/elk-playbook.yml` file to `/etc/ansible/elk-playbook.yml`
