@@ -11,7 +11,10 @@ above. Alternatively, select portions of the Ansible folder may be used to
 install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
-- Description of the Topologu Access Policies ELK Configuration Beats in Use
+- Description of the Topology
+- Access Policies
+- ELK Configuration
+- Beats in Use
 - Machines Being Monitored How to Use the Ansible Build
 
 
