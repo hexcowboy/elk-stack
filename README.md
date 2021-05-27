@@ -6,7 +6,7 @@ below.
 ![Network](images/network.png)
 
 These files have been tested and used to generate a live ELK deployment on
-Azure. They can be used to either recreate the entire deployment pictured
+Azure. They can be used to recreate the entire deployment pictured
 above. Alternatively, select portions of the Ansible folder may be used to
 install only certain pieces of it, such as Filebeat.
 
@@ -43,20 +43,20 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet.
 
-Only the Jump Box machine can accept connections from the Internet. Access to
-this machine is only allowed from the following IP addresses:
-- 76.40.166.206
+Only the Jump Box and the ELK-VM machines can accept connections from the Internet.
+A firewall rule should be set to only allow in and outbound connections to
+your IP address, marked by `<Your IP>`.
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 76.40.166.206        |
+| Jump Box | Yes                 | <Your IP>            |
 | Web-1    | No                  | 10.0.0.4             |
 | Web-2    | No                  | 10.0.0.4             |
 | Web-3    | No                  | 10.0.0.4             |
-| ELK-VM (Web)| Yes              | 76.40.166.206        |
-| ELK-VM (Filebeat)| No          | 10.0.0.0/24        |
+| ELK-VM (Web)| Yes              | <Your IP>            |
+| ELK-VM (Filebeat)| No          | 10.0.0.0/24          |
 
 ### Elk Configuration
 
